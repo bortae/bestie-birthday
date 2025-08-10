@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bestie</title>
+    <style>
+        body {
+            background-color: rgb(220, 143, 255);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 30px;
+            animation: colorShift 4s infinite alternate;
+        }
+
+        .card {
+            padding: 40px 60px;
+            background: rgba(185, 139, 231, 0.511);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            font-family: cursive;
+            text-align: center;
+            text-shadow: 2px 2px 5px #000000;
+            color: rgb(236, 220, 73);
+            margin: 0;
+            animation: bounce 2s infinite, colorShift 4s infinite alternate;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .poem,
+        .edit,
+        .gift {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleUp 2s infinite;
+            overflow: hidden;
+        }
+
+        .poem img,
+        .edit img,
+        .gift img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 2s ease;
+        }
+
+        .poem a,
+        .edit a,
+        .gift a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .poem img:hover,
+        .edit img:hover,
+        .gift img:hover {
+            transform: scale(1.5);
+
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes colorShift {
+            0% {
+                color: rgb(236, 220, 73);
+            }
+
+            50% {
+                color: rgb(255, 255, 255);
+            }
+
+            100% {
+                color: rgb(255, 105, 180);
+            }
+        }
+
+        @keyframes scaleUp {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>HAPPY BIRTHDAY BESTIE</h1>
+    </div>
+
+    <div class="container">
+        <div class="poem">
+            <a href="poem.html" target="_blank">
+                <img src="./the tortured poets department aesthetic.jpeg" alt="Poem">
+            </a>
+        </div>
+        <div class="edit">
+            <a href="edit.html" target="_blank">
+                <img src="./6c850e07-9d42-4569-af04-11df270721bf.jpeg" alt="Edit">
+            </a>
+        </div>
+        <div class="gift">
+            <a href="gift.html" target="_blank">
+                <img src="./Happy Birthday Goku by AI 🎉🎂🎈🥳.jpeg" alt="Gift">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
