@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://127.0.0.1:5500/Css/definetion.html/Birthday/start.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bestie</title>
+    <style>
+        body {
+            background-color: rgb(220, 143, 255);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 30px;
+        }
+
+        .card {
+            padding: 40px 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            font-family: cursive;
+            text-align: center;
+            text-shadow: 2px 2px 5px #000000;
+            color: rgb(236, 220, 73);
+            margin: 0;
+            animation: bounce 2s infinite, colorShift 4s infinite alternate;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .poem,
+        .edit,
+        .gift {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleUp 2s infinite;
+            overflow: hidden;
+        }
+
+        .poem img,
+        .edit img,
+        .gift img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .poem a,
+        .edit a,
+        .gift a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .poem img:hover,
+        .edit img:hover,
+        .gift img:hover {
+            transform: scale(2);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes colorShift {
+            0% {
+                color: rgb(236, 220, 73);
+            }
+
+            50% {
+                color: rgb(255, 255, 255);
+            }
+
+            100% {
+                color: rgb(255, 105, 180);
+            }
+        }
+
+        @keyframes scaleUp {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>HAPPY BIRTHDAY BESTIE</h1>
+    </div>
+
+    <div class="container">
+        <div class="poem">
+            <a href="http://127.0.0.1:5500/Css/definetion.html/Birthday/poem.html" target="_blank">
+                <img src="./Happy Birthday Bestie_files/the tortured poets department aesthetic.jpeg" alt="Poem">
+            </a>
+        </div>
+        <div class="edit">
+            <a href="http://127.0.0.1:5500/Css/definetion.html/Birthday/edit.html" target="_blank">
+                <img src="./Happy Birthday Bestie_files/6c850e07-9d42-4569-af04-11df270721bf.jpeg" alt="Edit">
+            </a>
+        </div>
+        <div class="gift">
+            <a href="http://127.0.0.1:5500/Css/definetion.html/Birthday/gift.html" target="_blank">
+                <img src="./Happy Birthday Bestie_files/Happy Birthday Goku by AI 🎉🎂🎈🥳.jpeg" alt="Gift">
+            </a>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
